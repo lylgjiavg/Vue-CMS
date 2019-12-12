@@ -14,7 +14,7 @@ module.exports = {
             { test: /.css$/, use: ['style-loader', 'css-loader'] },
             { test: /.less$/, use: ['style-loader', 'css-loader', 'less-loader'] },
             { test: /.scss$/, include: '/src/', use: ['style-loader', 'css-loader', 'sass-loader'] },
-            { test: /.(png|gif|jpg|jpeg)$/, use: ['url-loader?limit=23828&name=[hash:8]-[name].[ext]'] },
+            { test: /.(png|gif|jpg|jpeg)$/, use: ['url-loader'] },
             { test: /.(svg|eot|ttf|woff|woff2)$/, use: ['url-loader'] },
             { test: /.vue$/, use: 'vue-loader'}
         ]
